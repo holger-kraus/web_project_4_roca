@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacques Cousteau</title>
+</head>
+<body class="page">
+<header class="header">
+  <img class="header__logo" alt="logo" src="images/logo-white.svg">
+</header>
+<main class="content">
+  <section class="profile">
+    <a href="./addPlace.html">Add Place</a>
+  </section>
+  <section class="elements">
+    <ul class="elements__list">
+      <li><img src="http://placekitten.com/300/200" alt="furchtbare Katze"></li>
+      <li><img src="http://placekitten.com/300/200" alt="haessliche Katze"></li>
+      <li><img src="http://placekitten.com/300/200" alt="furchtbare Katze"></li>
+      <li><img src="http://placekitten.com/300/200" alt="furchtbare Katze"></li>
+      <li><img src="http://placekitten.com/300/200" alt="furchtbare Katze"></li>
+    </ul>
+  </section>
+</main>
+<footer class="footer">
+  <p class="footer__copyright">© 2021 Web Trigs Community</p>
+</footer>
+
+
+
+<section class="overlay overlay_profile" hidden>
+  <div class="overlay__container overlay__container_profile">
+    <form action="#" class="form" novalidate>
+      <h2 class="form__title">Edit profile</h2>
+      <label class="form__label form__label_title" for="profile-name-input">
+        <input id="profile-name-input" type="text"
+               name="name" class="form__field form__field_title"
+               minlength="2" maxlength="40" pattern="[a-zA-Z-\s]*" required>
+        <span id="profile-name-input-error" class="form__field-error"></span>
+      </label>
+      <label for="profile-aboutme-input" class="form__label form__label_detail">
+        <input id="profile-aboutme-input" type="text" name="aboutme" class="form__field form__field_detail"
+               minlength="2" maxlength="200" required>
+        <span id="profile-aboutme-input-error" class="form__field-error"></span>
+      </label>
+      <button type="submit" class="form__save">Save</button>
+    </form>
+    <button class="overlay__close-button"></button>
+  </div>
+</section>
+<section class="overlay overlay_avatarpic" hidden>
+  <div class="overlay__container overlay__container_avatarpic">
+    <form action="#" class="form" novalidate>
+      <h2 class="form__title">Change Userpic</h2>
+      <label class="form__label form__label_title" for="avatarpic-link-input">
+        <input id="avatarpic-link-input" type="url" name="avatarpic-link"
+               class="form__field form__field_title" placeholder="Image Link" required>
+        <span id="avatarpic-link-input-error" class="form__field-error"></span>
+      </label>
+      <button type="submit" class="form__save">Save</button>
+    </form>
+    <button class="overlay__close-button"></button>
+  </div>
+</section>
+<section class="overlay overlay_confirmation" hidden>
+  <div class="overlay__container overlay__container_confirmation">
+    <form action="#" class="form" novalidate>
+      <h2 class="form__title">Are you sure?</h2>
+      <button type="submit" class="form__save">Yes</button>
+    </form>
+    <button class="overlay__close-button"></button>
+  </div>
+</section>
+<section class="overlay overlay_image" hidden>
+  <div class="overlay__container overlay__container_image">
+    <img class="image" alt="image title">
+    <p class="image__title"></p>
+    <button class="overlay__close-button"></button>
+  </div>
+</section>
+<template id="element__template">
+  <li class="element" data-id="#">
+    <a class="element__link" href="#">
+      <button class="element__remove"></button>
+      <div class="element__title-container">
+        <h2 class="element__title"></h2>
+        <div class="element__like">
+          <button class="element__like-button"></button>
+          <span class="element__like-count">1</span>
+        </div>
+      </div>
+    </a>
+  </li>
+</template>
+</body>
+</html>
