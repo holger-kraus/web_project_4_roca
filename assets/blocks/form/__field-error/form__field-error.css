@@ -1,0 +1,7 @@
+.form__field-error {
+  visibility: hidden;
+  margin-top: 5px;
+  color: #FF0000;
+  font-size: 12px;
+  line-height: 15px;
+}

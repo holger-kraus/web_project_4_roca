@@ -1,0 +1,24 @@
+@import url("__avatar/profile__avatar.css");
+@import url("__avatar-edit/profile__avatar-edit.css");
+@import url("__avatar-image/profile__avatar-image.css");
+@import url("__edit-button/profile__edit-button.css");
+@import url("__info/profile__info.css");
+@import url("__name/profile__name.css");
+@import url("__about-me/profile__about-me.css");
+@import url("__add-button/profile__add-button.css");
+
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 36px auto 0;
+  max-width: 882px;
+}
+
+@media (max-width : 600px) {
+  .profile {
+    margin: 38px auto 0;
+    flex-direction: column;
+  }
+}

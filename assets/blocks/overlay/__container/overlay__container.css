@@ -1,0 +1,10 @@
+.overlay__container {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+

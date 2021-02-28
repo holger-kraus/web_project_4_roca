@@ -1,0 +1,25 @@
+.overlay__close-button {
+  position: absolute;
+  border: 0;
+  top: -45px;
+  right: -45px;
+  width: 58px;
+  height: 58px;
+  background: 58px 58px url("../../../images/close-icon.svg");
+}
+
+.overlay__close-button:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+@media (max-width : 425px) {
+  .overlay__close-button {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    top: -25px;
+    right: -25px;
+  }
+}
+

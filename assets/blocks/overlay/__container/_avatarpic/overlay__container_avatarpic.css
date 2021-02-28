@@ -1,0 +1,12 @@
+.overlay__container_avatarpic {
+  width: 430px;
+  height: 272px;
+  top: 180px;
+}
+
+@media (max-width : 425px) {
+  .overlay__container_avatarpic {
+    width: 240px;
+    height: 215px;
+  }
+}

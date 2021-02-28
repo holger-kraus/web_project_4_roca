@@ -1,0 +1,14 @@
+.element__remove {
+  width: 18px;
+  height: 20px;
+  background: url("../../../images/trashcan.png");
+  border: none;
+  margin-top: 18px;
+  margin-right: 15px;
+  align-self: flex-end;
+}
+
+.element__remove:hover {
+  opacity: .6;
+  cursor: pointer;
+}

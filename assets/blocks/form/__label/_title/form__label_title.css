@@ -1,0 +1,14 @@
+.form__label_title {
+  margin: 50px 0 0;
+  padding: 0;
+}
+
+@media (max-width : 425px) {
+  .form__label_title {
+    margin: 15px 0 0;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

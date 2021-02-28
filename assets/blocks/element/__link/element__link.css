@@ -1,0 +1,14 @@
+.element__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  text-decoration: none;
+  width: 100%;
+  height: 361px;
+  background-repeat: no-repeat;
+  background-size: 100% 282px;
+  background-position: 0 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}

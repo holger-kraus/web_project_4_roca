@@ -1,0 +1,8 @@
+.overlay__container_image {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  max-width: 75vw;
+  max-height: 75vh;
+  top: 90px;
+}

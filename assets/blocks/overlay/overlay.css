@@ -1,0 +1,20 @@
+@import url("__container/overlay__container.css");
+@import url("__container/_profile/overlay__container_profile.css");
+@import url("__container/_place/overlay__container_place.css");
+@import url("__container/_image/overlay__container_image.css");
+@import url("__container/_avatarpic/overlay__container_avatarpic.css");
+@import url("__container/_confirmation/overlay__container_confirmation.css");
+@import url("__close-button/overlay__close-button.css");
+
+.overlay {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: visibility .5s, opacity .5s ease-in-out;
+}

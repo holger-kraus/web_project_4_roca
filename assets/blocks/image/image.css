@@ -1,0 +1,6 @@
+@import url("__title/image__title.css");
+
+.image {
+  max-width: 75vw;
+  max-height: 75vh;
+}
