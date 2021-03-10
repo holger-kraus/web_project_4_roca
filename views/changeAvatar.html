@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add new place</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+  <img class="header__logo" alt="logo" src="images/logo-white.svg">
+</header>
+<main class="content">
+    <section class="overlay__container overlay__container_avatarpic">
+      <form action="#" class="form" novalidate>
+        <h2 class="form__title">Change Userpic</h2>
+        <label class="form__label form__label_title" for="avatarpic-link-input">
+          <input id="avatarpic-link-input" type="url" name="avatarpic-link"
+                 class="form__field form__field_title" placeholder="Image Link" value="{{ profile.avatar }}" required>
+          <span id="avatarpic-link-input-error" class="form__field-error"></span>
+        </label>
+        <button type="submit" class="form__save">Save</button>
+      </form>
+    </section>
+</main>
+</body>
+</html>

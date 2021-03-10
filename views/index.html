@@ -12,16 +12,20 @@
 </header>
 <main class="content">
   <section class="profile">
-    <button class="profile__avatar">
-      <img class="profile__avatar-image" alt="profile avatar" src="{{ profile.avatar }}">
-      <div class="profile__avatar-edit"></div>
-    </button>
+    <a href="/changeAvatar">
+      <button class="profile__avatar">
+        <img class="profile__avatar-image" alt="profile avatar" src="{{ profile.avatar }}">
+        <div class="profile__avatar-edit"></div>
+      </button>
+    </a>
     <div class="profile__info">
       <h1 class="profile__name">{{ profile.name }}</h1>
-      <button class="profile__edit-button"></button>
+      <a href="/changeProfile"><button class="profile__edit-button"></button></a>
       <p class="profile__about-me">{{ profile.about }}</p>
     </div>
-    <button class="profile__add-button"></button>
+    <add-place class="profile__add-button">
+      <a class="profile__add-button-link" href="/addPlace"></a>
+    </add-place>
   </section>
   <section class="elements">
     <ul class="elements__list">
@@ -45,5 +49,6 @@
 <footer class="footer">
   <p class="footer__copyright">© 2021 Holger Kraus</p>
 </footer>
+<script type="module" async src="/scripts/index.js"></script>
 </body>
 </html>

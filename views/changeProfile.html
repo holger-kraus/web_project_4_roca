@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add new place</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+  <img class="header__logo" alt="logo" src="images/logo-white.svg">
+</header>
+<main class="content">
+    <section class="overlay__container overlay__container_profile">
+      <form action="#" class="form" novalidate>
+        <h2 class="form__title">Edit profile</h2>
+        <label class="form__label form__label_title" for="profile-name-input">
+          <input id="profile-name-input" type="text"
+                 name="name" class="form__field form__field_title"
+                 minlength="2" maxlength="40" pattern="[a-zA-Z-\s]*" value="{{ profile.name }}" required>
+          <span id="profile-name-input-error" class="form__field-error"></span>
+        </label>
+        <label for="profile-aboutme-input" class="form__label form__label_detail">
+          <input id="profile-aboutme-input" type="text" name="aboutme" class="form__field form__field_detail"
+                 minlength="2" maxlength="200" value="{{ profile.about }}" required>
+          <span id="profile-aboutme-input-error" class="form__field-error"></span>
+        </label>
+        <button type="submit" class="form__save">Save</button>
+      </form>
+    </section>
+</main>
+</body>
+</html>

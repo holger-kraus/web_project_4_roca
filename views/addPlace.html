@@ -1,27 +1,37 @@
-<html>
-<head></head>
-<body>
-<section class="overlay overlay_place">
-  <div class="overlay__container overlay__container_place">
-    <form action="#" class="form" novalidate>
-      <h2 class="form__title">New place</h2>
-      <label class="form__label form__label_title" for="place-title-input">
-        Title
-        <input id="place-title-input" type="text" name="image-title"
-               class="form__field form__field_title form__field_error" placeholder="Title" minlength="2" maxlength="40"
-               required>
-        <span id="place-title-input-error" class="form__field-error"></span>
-      </label>
-      <label class="form__label form__label_detail" for="place-link-input">
-        Image Link
-        <input id="place-link-input" type="url" name="image-link"
-               class="form__field form__field_detail form__field_error" placeholder="Image Link" required>
-        <span id="place-link-input-error" class="form__field-error"></span>
-      </label>
-      <button type="submit" class="form__save">Create</button>
-    </form>
-    <a href="rocaIndex.html">back</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add new place</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+  <img class="header__logo" alt="logo" src="images/logo-white.svg">
+</header>
+<main class="content">
+  <section class="overlay overlay_place overlay_opened">
+    <div class="overlay__container overlay__container_place">
+      <form action="#" class="form" novalidate>
+        <h2 class="form__title">New place</h2>
+        <label class="form__label form__label_title" for="place-title-input">
+          <input id="place-title-input" type="text" name="image-title"
+                 class="form__field form__field_title" placeholder="Title" minlength="2"
+                 maxlength="40"
+                 required>
+          <span id="place-title-input-error" class="form__field-error"></span>
+        </label>
+        <label class="form__label form__label_detail" for="place-link-input">
+          <input id="place-link-input" type="url" name="image-link"
+                 class="form__field form__field_detail" placeholder="Image Link" required>
+          <span id="place-link-input-error" class="form__field-error"></span>
+        </label>
+        <button type="submit" class="form__save">Create</button>
+      </form>
+      <button class="overlay__close-button"></button>
+    </div>
+  </section>
+</main>
 </body>
 </html>

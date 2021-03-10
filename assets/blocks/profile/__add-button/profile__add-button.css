@@ -4,6 +4,7 @@
   width: 150px;
   height: 50px;
   background: url("../../../images/add-button.svg") no-repeat center;
+  border: 1px solid #FFFFFF;
 }
 
 .profile__add-button:hover {

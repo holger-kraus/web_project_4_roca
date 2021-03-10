@@ -5,7 +5,7 @@ import {NotFoundError} from "../errors/NotFoundError.js";
 import {messagesConfig} from "../config/messagesConfig.js";
 import {celebrate, Joi} from "celebrate";
 import {createUser} from "../controllers/users.js";
-import {getOverviewPage} from "../controllers/index.js";
+import {getChangeAvatar, getChangeProfile, getOverviewPage} from "../controllers/index.js";
 
 const router = express.Router();
 
@@ -20,6 +20,15 @@ router.post('/signup', celebrate({
 
 router.use('/users', users);
 router.use('/cards', cards);
+router.get('/addPlace', (req, res, next) => {
+  res.render("addPlace.html", {});
+})
+router.get('/changeProfile', (req, res, next) => {
+  getChangeProfile(req, res, next);
+})
+router.get('/changeAvatar', (req, res, next) => {
+  getChangeAvatar(req, res, next);
+})
 router.get('/', (req, res, next) => {
     getOverviewPage(req, res, next);
 });
